@@ -1,0 +1,167 @@
+:root {
+  --fondo: #fbe2d4;   
+  --naranja: #ebb286;
+  --marron: #7c2b2b;  
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--fondo);
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #f6d4d7, #f2c78c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+  color: #7a4028;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #3b2b2b;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #a94d3c;
+}
+
+
+.search-container {
+  position: relative;
+  width: 200px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.results {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  display: none;
+  z-index: 1000;
+}
+
+.results a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #333;
+}
+
+.results a:hover {
+  background: #f2c78c;
+  color: #000;
+}
+
+.intro {
+  text-align: center;
+  padding: 30px;
+}
+
+.intro h2 {
+  color: var(--marron);
+}
+
+button {
+  background: var(--marron);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #a04242;
+}
+
+.oculto {
+  display: none;
+  margin-top: 15px;
+  color: #444;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+  color: var(--marron);
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  background: var(--naranja);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  color: var(--marron);
+}

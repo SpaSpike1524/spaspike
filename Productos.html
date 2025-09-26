@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online - Spa Harmony</title>
+  <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Spa Harmony</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Barra de búsqueda y filtro -->
+  <section class="filtros">
+    <input type="text" id="buscar" placeholder="Buscar producto...">
+    <select id="categoria">
+      <option value="todos">Todas las categorías</option>
+      <option value="Aromaterapia">Aromaterapia</option>
+      <option value="Cuidado Facial">Cuidado Facial</option>
+      <option value="Relajación">Relajación</option>
+      <option value="Masajes">Masajes</option>
+      <option value="Bebidas Saludables">Bebidas Saludables</option>
+    </select>
+  </section>
+
+  <main id="contenedor-productos">
+    <!-- Los productos se generarán con JS -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Spa Harmony - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="productos.js"></script>
+</body>
+</html>

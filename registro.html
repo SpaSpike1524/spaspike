@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spa Natural Belleza · Interfaz SAO</title>
+  <link rel="stylesheet" href="../spa Spike/css/registro.css" />
+</head>
+<body>
+  
+  <header>
+        <div class="logo">
+            <img src="../spa Spike/imagenes/logosintexto.svg" alt="Spa Spike">
+            <h1>Spa Spike</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../spa Spike/index.html">INICIO</a></li>
+                <li><a href="../spa Spike/SobreNosotros.html">NOSOTROS</a></li>
+                <li><a href="#">PRODUCTOS</a></li>
+                <li><a href="../spa Spike/registro.html">RESERVACION</a></li>
+                <li><a href="../spa Spike/sala.html">SALA DE SPA</a></li>
+            </ul>
+            <div class="search-container">
+  <input type="text" id="search" placeholder="Buscar...">
+  <div class="results" id="results"></div>
+</div>
+
+        </nav>
+    </header>
+
+  <main class="main-sao">
+    <section id="registro" class="panel active">
+      <h2>📝 Registro de Reserva</h2>
+      <form id="formRegistro">
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" required />
+        </div>
+        <div class="form-group">
+          <label for="servicio">Servicio</label>
+          <select id="servicio" required>
+            <option value="">Selecciona servicio</option>
+            <option value="Masaje relajante">Masaje relajante</option>
+            <option value="Facial hidratante">Facial hidratante</option>
+            <option value="Spa de pies">Spa de pies</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" required />
+        </div>
+        <button type="submit">Reservar</button>
+      </form>
+      <p id="mensajeRegistro" class="message"></p>
+    </section>
+
+    <section id="reservas" class="panel">
+      <h2>📋 Mis Reservas</h2>
+      <ul id="listaReservas" class="list"></ul>
+    </section>
+
+    <section id="descuentos" class="panel">
+      <h2>🎁 Descuentos Activos</h2>
+      <ul id="listaDescuentos" class="list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer-sao">
+    <p>&copy; 2025 Spa Natural Belleza</p>
+  </footer>
+
+  <script src="../Reservacion/js/registro.js"></script>
+</body>
+</html>
